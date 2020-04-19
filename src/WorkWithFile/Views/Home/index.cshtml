@@ -1,0 +1,18 @@
+﻿<h1>Home Page</h1>
+
+<div>
+    <h4>Single File Upload</h4>
+    <form asp-controller="Home" asp-action="SingleFile"
+          enctype="multipart/form-data" method="post">
+        <input type="file" name="file" />
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<div>
+    <h4>Multiple File Upload</h4>
+    <form asp-controller="Home" asp-action="MultipleFiles"
+          enctype="multipart/form-data" method="post">
+        <input type="file" multiple name="files" />
+        <button type="submit">Submit</button>
+    </form>
+</div>
