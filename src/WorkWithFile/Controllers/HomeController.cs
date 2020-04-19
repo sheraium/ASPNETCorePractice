@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WorkWithFile.Models;
 
 namespace WorkWithFile.Controllers
 {
@@ -18,6 +19,16 @@ namespace WorkWithFile.Controllers
         {
             _env = env;
             _dir = _env.ContentRootPath;
+        }
+
+        public IActionResult FileInModel(SomeForm someForm)
+        {
+            using (var fileStream = new FileStream(Path.Combine(_dir, $"{someForm.Name}"), FileMode.Create, FileAccess.Write))
+            {
+                someForm.File.CopyTo(fileStream);
+            }
+
+            return RedirectToAction("Index");
         }
 
         public IActionResult Index()
