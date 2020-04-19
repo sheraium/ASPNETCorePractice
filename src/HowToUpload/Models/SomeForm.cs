@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace WorkWithFile.Models
+namespace HowToUpload.Models
 {
     public class SomeForm
     {
