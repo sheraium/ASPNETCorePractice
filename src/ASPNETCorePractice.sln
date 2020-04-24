@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkWithElectronNET", "Work
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HowToUpload", "HowToUpload\HowToUpload.csproj", "{17732E15-6526-441E-9001-8C91FF98A65B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToFileDisplay", "HowToFileDisplay\HowToFileDisplay.csproj", "{78E80F7B-6E3D-4817-9EDB-CC9D7E4FC5D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HowToFileDisplay", "HowToFileDisplay\HowToFileDisplay.csproj", "{78E80F7B-6E3D-4817-9EDB-CC9D7E4FC5D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "oauth", "oauth", "{0A3683FD-1B3E-4C04-BBE0-8D67E4DB561F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{03BBC232-27B4-4846-B475-D11E764BF1FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +31,16 @@ Global
 		{78E80F7B-6E3D-4817-9EDB-CC9D7E4FC5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78E80F7B-6E3D-4817-9EDB-CC9D7E4FC5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78E80F7B-6E3D-4817-9EDB-CC9D7E4FC5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03BBC232-27B4-4846-B475-D11E764BF1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BBC232-27B4-4846-B475-D11E764BF1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BBC232-27B4-4846-B475-D11E764BF1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BBC232-27B4-4846-B475-D11E764BF1FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03BBC232-27B4-4846-B475-D11E764BF1FB} = {0A3683FD-1B3E-4C04-BBE0-8D67E4DB561F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {09F0B1DB-F92C-477B-AA5F-FC592F17F515}
