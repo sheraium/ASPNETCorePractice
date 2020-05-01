@@ -8,4 +8,10 @@
     <PackageReference Include="IdentityServer4" Version="3.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="tempkey.rsa">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
